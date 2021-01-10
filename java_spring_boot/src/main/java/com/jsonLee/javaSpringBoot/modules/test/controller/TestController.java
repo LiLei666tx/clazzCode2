@@ -35,7 +35,7 @@ public class TestController {
     private ApplicationTest applicationTest;
 
     /**
-     * 127.0.0.1:8085/test/logTest
+     * 127.0.0.1/test/logTest
      * @return
      */
     @GetMapping("/logTest")
@@ -46,11 +46,11 @@ public class TestController {
         LOGGER.info("this is info log");
         LOGGER.warn("this is warn log");
         LOGGER.error("this is error log");
-        return "This is log test";
+        return "This is log test111";
     }
 
     /**
-     * 127.0.0.1:8085/test/testValue
+     * 127.0.0.1/test/testValue
      * @return
      */
     @GetMapping("/testValue")
@@ -71,7 +71,7 @@ public class TestController {
    }
 
     /**
-     * 127.0.0.1:8085/test/testDesc  ----  get
+     * 127.0.0.1/test/testDesc  ----  get
      * @return
      */
     @GetMapping("/testDesc")
